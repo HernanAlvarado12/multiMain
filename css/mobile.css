@@ -1,0 +1,256 @@
+:root {
+    --fnt-lrg: 2.8rem;
+    --fnt-mdm: 1.6rem;
+    --fnt-smll: 1.4rem;
+    --white: hsl(0, 0%, 100%);
+    --red: hsl(354, 84%, 57%);
+    --gray:  hsl(231, 11%, 63%);
+    --gray-light: hsl(229, 24%, 87%);
+    --magnolia: hsl(217, 100%, 97%);
+    --alabaster: hsl(231, 100%, 99%);
+    --blue-light: hsl(206, 94%, 87%);
+    --blue-marine: hsl(213, 96%, 18%);
+    --blue-purple: hsl(243, 100%, 62%);
+    --blue-pastel: hsl(228, 100%, 84%); 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    line-height: 1.4;
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+span { display: block; }
+
+.main__cntnr {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 10rem;
+    background: url('../assets/sidebar-mobile.svg') top / 100% no-repeat, linear-gradient(var(--magnolia) 85%, 85%, white) center / 100% no-repeat;
+}
+
+.elmnt--flx, .cntnr--flx {
+    display: flex;
+    justify-content: center;
+}
+
+.flx--algn-cntr {
+    align-items: center;
+}
+
+.flx--jstf-strt {
+    justify-content: start;
+}
+
+.flx--jstf-btwn {
+    justify-content: space-between;
+}
+
+.flx--clmn {
+    flex-direction: column;
+}
+
+.flx--jstf-end {
+    justify-content: flex-end;
+}
+
+.flx--rw-gp-1 {
+    row-gap: 1rem;
+}
+
+.flx--rw-gp-1-5 {
+    row-gap: 1.5rem;
+}
+
+.flx--clmn-gp-1 {
+    column-gap: 1.5rem;
+}
+
+.main__cards {
+    margin: 3rem 0 2rem 0;
+    column-gap: 2rem;
+}
+
+.card {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    background: transparent;
+}
+
+.card__step {
+    display: none;
+}
+
+.clr--wht {
+    color: var(--white);
+}
+
+.clr--mrn {
+    color: var(--blue-marine);
+}
+
+.clr--gry {
+    color: var(--gray);
+}
+
+.fnt--smll {
+    font-weight: 400;
+    font-size: var(--fnt-smll);
+}
+
+.fnt--lrg {
+    font-weight: 700;
+    font-size: var(--fnt-lrg);
+}
+
+.fnt--mdm {
+    font-weight: 500;
+    font-size: var(--fnt-mdm);
+}
+
+.fnt--400 {
+    font-weight: 400;
+}
+
+.fnt--500 {
+    font-weight: 500;
+}
+
+.fnt--700 {
+    font-weight: 700;
+}
+
+.elmnt--ttl, .cntnr--ttl {
+    width: 100%;
+}
+
+.main__info {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.info__sbttl {
+    margin: 1rem 0 3rem;
+}
+
+.form__input {
+    padding-left: 2rem;
+    outline: none;
+    border-radius: 0.6rem;
+}
+
+.form__input:focus, main .select--default {
+    border: 1px solid var(--blue-purple);
+}
+
+.elmnt--hght-4 {
+    height: 4rem;
+}
+
+.elmnt--brd, .cntnr--brd {
+    border: 1px solid var(--gray-light);
+}
+
+.input--submit, .bttn__next {
+    width: 9rem;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 0.6rem;
+    background-color: var(--blue-marine);
+}
+
+.input--invalid {
+    border: 1px solid var(--red);
+}
+
+.elmnt--abslt, .cntnr--abslt {
+    position: absolute;
+}
+
+.elmnt--brd-trns, .cntnr--brd-trns {
+    border: transparent;
+}
+
+.select__artcl {
+    padding: 1.4rem 1.2rem;
+    border-radius: 0.8rem;
+}
+
+.bttn__back {
+    bottom: 2rem;
+    left: 2rem;
+    background-color: var(--white);
+}
+
+.bttn__check {
+    width: 4rem;
+    height: 2.2rem;
+    padding: 0 0.5rem;
+    border-radius: 2rem;
+    background-color: var(--blue-marine);
+}
+
+.check__bttn {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.select__plan {
+    height: 6rem;
+    margin-top: 3rem;
+    border-radius: 0.8rem;
+    background-color: var(--magnolia);
+}
+
+.clr--prpl {
+    color: var(--blue-purple);
+}
+
+.input--check {
+    width: 2rem;
+    height: 2rem;
+}
+
+.sctn__finish {
+    padding: 2rem;
+    row-gap: 2rem;
+    border-radius: 0.6rem;
+    background-color: var(--magnolia);
+}
+
+.sctn__finish > section {
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray-light);
+}
+
+.sctn__finish + div {
+    padding: 2rem;
+}
+
+.bckgrnd--prpl {
+    background-color: var(--blue-purple);
+}
+
+.txt--algn {
+    text-align: center;
+}
+
+@media (any-hover: hover) {
+    .bttn__next, .bttn__back {
+        cursor: pointer;
+    }
+}

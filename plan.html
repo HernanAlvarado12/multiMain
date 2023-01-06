@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+    <head>
+        <meta charset ="UTF-8">
+        <title>Select your plan</title>
+        <meta name ="description" content ="Clone of a web page of frontend mentor">
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+        <meta name ="keywords" content ="Practice, JavaScript, Html, Css, Web page">
+        <meta name ="robots" content ="index, follow">
+        <meta name ="author" content ="Hernan Alvarado">
+        <meta name ="copyright" content ="Hernan Alvarado">
+        <meta property ="og:title" content ="Multi Main">
+        <meta property ="og:description" content ="">
+        <meta property ="og:image" content ="">
+        <meta http-equiv ="cache-control" content ="no-cache">
+        <link rel ="shortcut icon" href ="./assets/favicon.png" type ="image/x-icon">
+        <link rel ="preconnect" href ="https://fonts.googleapis.com">
+        <link rel ="preconnect" href ="https://fonts.gstatic.com" crossorigin>
+        <link href ="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel ="stylesheet">
+        <link rel ="stylesheet" href ="./css/mobile.css">
+        <link rel ="stylesheet" media ="screen and (min-width: 900px)" href ="./css/desktop.css">
+    </head>
+
+    <body class ="cntnr--flx flx--algn-cntr">
+        <main class ="main__cntnr cntnr--flx flx--clmn">
+            <section class ="main__cards cntnr--flx flx--algn-strt flx--rw-gp-1-5" id ="mainOptions"> 
+                <div class ="cntnr--flx flx--algn-cntr fnt--mdm clr--wht">
+                    <span class ="card cntnr--flx flx--algn-cntr">1</span>
+                    <div class ="card__step fnt--smll">
+                        <p class ="clr--gry">STEP 1</p>
+                        <h3 class ="fnt--700 clr--wht">YOUR INFO</h3>
+                    </div>
+                </div>
+                <div class ="cntnr--flx flx--algn-cntr fnt--mdm clr--wht">
+                    <span class ="card cntnr--flx flx--algn-cntr">2</span>
+                    <div class ="card__step fnt--smll">
+                        <p class ="clr--gry">STEP 2</p>
+                        <h3 class ="fnt--700 clr--wht">SELECT PLAN</h3>
+                    </div>
+                </div>
+                <div class ="cntnr--flx flx--algn-cntr fnt--mdm clr--wht">
+                    <span class ="card cntnr--flx flx--algn-cntr">3</span>
+                    <div class ="card__step fnt--smll">
+                        <p class =" clr--gry">STEP 3</p>
+                        <h3 class ="fnt--700 clr--wht">ADD-ONS</h3>
+                    </div>
+                </div>
+                <div class ="cntnr--flx flx--algn-cntr fnt--mdm clr--wht">
+                    <span class ="card cntnr--flx flx--algn-cntr">4</span>
+                    <div class ="card__step fnt--smll">
+                        <p class ="clr--gry">STEP 4</p>
+                        <h3 class ="fnt--700 clr--wht">SUMMARY</h3>
+                    </div>
+                </div>
+            </section>  
+            <section class ="main__info cntnr--rltv">
+                <h1 class ="fnt--lrg clr--mrn">Select your plan</h1>
+                <p class ="info__sbttl fnt--mdm clr--gry">You have the option of monthly or yearly billind.</p>
+                <section class ="cntnr--flx flx--clmn flx--rw-gp-1-5 flx--clmn-gp-1 flx--rw-dsk">
+                    <article class="select__artcl cntnr--flx flx--algn-cntr flx--algn-strt flx--jstf-strt flx--clmn-gp-1 flx--clmn-dsk elmnt--brd select--default">
+                        <img src ="./assets/arcade.svg" alt ="Icon of a plan">
+                        <div>
+                            <h2 class ="elmnt--pddng-btm fnt--mdm clr--mrn">Arcade</h2>
+                            <p class ="fnt--smll clr--gry">$ 9/mo</p>
+                            <p class ="fnt--smll clr--mrn"></p>
+                        </div>
+                    </article>
+                    <article class="select__artcl cntnr--flx flx--algn-cntr flx--algn-strt flx--jstf-strt flx--clmn-gp-1 flx--clmn-dsk elmnt--brd">
+                        <img src ="./assets/advanced.svg" alt ="Icon of a plan">
+                        <div>
+                            <h2 class ="elmnt--pddng-btm fnt--mdm clr--mrn">Advanced</h2>
+                            <p class ="fnt--smll clr--gry">$ 12/mo</p>
+                            <p class ="fnt--smll clr--mrn"></p>
+                        </div>
+                    </article>
+                    <article class="select__artcl cntnr--flx flx--algn-cntr flx--algn-strt flx--jstf-strt flx--clmn-gp-1 flx--clmn-dsk elmnt--brd">
+                        <img src ="./assets/pro.svg" alt ="Icon of a plan">
+                        <div>
+                            <h2 class ="elmnt--pddng-btm fnt--mdm clr--mrn">Pro</h2>
+                            <p class ="fnt--smll clr--gry">$ 15/mo</p>
+                            <p class ="fnt--smll clr--mrn"></p>
+                        </div>
+                    </article>
+                </section>
+                <div class ="select__plan cntnr--flx flx--algn-cntr flx--clmn-gp-1 fnt--smll fnt--700">
+                    <span class ="clr--mrn">Monthly</span>
+                    <span class ="bttn__check cntnr--flx flx--jstf-strt flx--algn-cntr">
+                        <span class ="check__bttn"></span>
+                    </span>
+                    <span class ="clr--gry">Yearly</span>
+                </div>
+                <button class ="bttn__back elmnt--hght-4 fnt--700 clr--gry elmnt--abslt elmnt--brd-trns">Go back</button>
+                <button class ="bttn__next elmnt--hght-4 fnt--700 clr--wht elmnt--abslt elmnt--brd-trns">Next Step</button>
+            </section>
+        </main>
+        <script src ="./js/plan.js"></script>
+    </body>
+
+</html>
