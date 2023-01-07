@@ -42,6 +42,10 @@
         padding-top: 0;
     }
 
+    .pddng--1 {
+        padding: 2rem;
+    }
+
     .flx--algn-strt {
         align-items: flex-start;
     }

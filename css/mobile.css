@@ -249,8 +249,17 @@ span { display: block; }
     text-align: center;
 }
 
+.current__progress {
+    color: var(--blue-purple);
+    background-color: white;
+}
+
 @media (any-hover: hover) {
     .bttn__next, .bttn__back {
+        cursor: pointer;
+    }
+
+    .card {
         cursor: pointer;
     }
 }
