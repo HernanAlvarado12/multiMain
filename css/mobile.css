@@ -254,12 +254,12 @@ span { display: block; }
     background-color: white;
 }
 
-@media (any-hover: hover) {
-    .bttn__next, .bttn__back {
-        cursor: pointer;
-    }
+.main__thanks {
+    max-width: 60rem;
+}
 
-    .card {
+@media (any-hover: hover) {
+    .bttn__next, .bttn__back, .card, .select__artcl {
         cursor: pointer;
     }
 }

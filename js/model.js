@@ -3,11 +3,6 @@ const options = [... document.getElementById('mainOptions').children]
 const htmlPaths = ['index.html', 'plan.html', 'picks.html', 'finish.html', 'thanks.html']
 
 
-export default function backgroundCard() {
-    options[indexOf()].firstElementChild.classList.toggle('current__progress');
-}
-
-
 /**
  * 
  * @param {Event} event 
@@ -39,12 +34,11 @@ const indexOf = () => {
  */
 const containsClass = (currentNode, classList) => currentNode.classList.contains(classList);
 
-const jsonPlan = {
-    plan: undefined,
-    picks: []
+function backgroundCard() {
+    options[indexOf()].firstElementChild.classList.toggle('current__progress');
 }
 
-export {moveComponents, backgroundCard, containsClass, jsonPlan};
+export {moveComponents, backgroundCard, containsClass};
 
 
 

@@ -1,23 +1,30 @@
 import {moveComponents, backgroundCard} from './model.js'
 
 const mainInfo = document.querySelector('.main__info')
-const picksArticle = [... document.getElementsByTagName('article')]
 
 document.addEventListener('click', moveComponents)
 backgroundCard()
 
 mainInfo.addEventListener('click', event => {
     const eventNode = event.target;
-    if(eventNode.nodeName === 'INPUT') {
-        eventNode.parentNode.classList.toggle('select--default')
+    const parent = parentNode(eventNode)
+    if(parent) {
+        parent.classList.toggle('select--default')
+        parent.firstElementChild.checked = parent.classList.contains('select--default')? true : false;
     }
 })
 
 /**
  * 
  * @param {Element} currentNode 
- * @param {String} classList 
+ * @returns {Element}
  */
-const containsClass = (currentNode, classList) => currentNode.classList.contains(classList);
-
-
+function parentNode(currentNode) {
+    if(currentNode.matches('main')) {
+        return null;
+    }else {
+        if(currentNode.classList.contains('select__artcl')) 
+            return currentNode;
+        return parentNode(currentNode.parentNode)
+    }
+} 

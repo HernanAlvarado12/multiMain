@@ -2,6 +2,7 @@ import {moveComponents, backgroundCard, containsClass} from './model.js'
 
 const mainInfo = document.querySelector('.main__info')
 const mainContainer = document.querySelector('.main__cntnr')
+const price = [...document.querySelectorAll('.plan__price')]
 
 document.addEventListener('click', moveComponents)
 backgroundCard()
@@ -31,16 +32,26 @@ function durationPlan() {
     button.classList.toggle('flx--jstf-end')
     mainContainer.classList.toggle('pddng--1')
     if(containsClass(button, 'flx--jstf-end')) {
-        addTextPlan('2 months free')
-        if(window.innerWidth < 900) 
-            mainCards.style.marginTop = '10rem'
+        addContentPlan(false ,'')
     }else {
-       addTextPlan('')
+       addContentPlan(true,'')
     }
 }
 
 /**
  * 
+ * @param {Boolean} typePlan true si el plan es mensual o false de lo contrario
  * @param {String} content 
  */
-const addTextPlan = (content) => document.querySelectorAll('article p + p').forEach(htmlElement => htmlElement.textContent = content)
+function addContentPlan(typePlan, content) {
+    const prices = [9, 12, 15]
+    price.forEach((htmlElement, index) => {
+        if(typePlan) {
+            htmlElement.innerHTML = `$ ${prices[index]} /yr`
+            htmlElement.nextElementSibling.innerHTML = ``
+        }else{
+            htmlElement.innerHTML = `$ ${prices[index]}0 /mo`
+            htmlElement.nextElementSibling.innerHTML = `2 months free`
+        }
+    })  
+}
